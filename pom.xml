@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.openmrs.distro</groupId>
+	<artifactId>kenyaemr</artifactId>
+	<version>13.3-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>KenyaEMR distribution</name>
+	<description>Builds the KenyaEMR distribution</description>
+
+	<organization>
+		<name>I-TECH</name>
+		<url>http://www.go2itech.org</url>
+	</organization>
+
+	<scm>
+		<connection>scm:git:git@github.com:I-TECH/openmrs-distro-kenyaemr.git</connection>
+		<developerConnection>scm:git:git@github.com:I-TECH/openmrs-distro-kenyaemr.git</developerConnection>
+		<url>scm:git:git@github.com:I-TECH/openmrs-distro-kenyaemr.git</url>
+	</scm>
+
+	<properties>
+		<!-- Modules -->
+		<appframeworkVersion>1.5</appframeworkVersion>
+		<calculationVersion>1.0</calculationVersion>
+		<groovyVersion>2.2.4</groovyVersion>
+		<htmlformentryVersion>2.2</htmlformentryVersion>
+		<htmlformentry19extVersion>1.4</htmlformentry19extVersion>
+		<htmlwidgetsVersion>1.6.5</htmlwidgetsVersion>
+		<idgenVersion>2.6</idgenVersion>
+		<kenyacoreVersion>0.13.4</kenyacoreVersion>
+		<kenyaemrVersion>13.3-SNAPSHOT</kenyaemrVersion>
+		<kenyadqVersion>0.2.2</kenyadqVersion>
+		<kenyauiVersion>1.12.9</kenyauiVersion>
+		<logicVersion>0.5.2</logicVersion>
+		<metadatamappingVersion>1.0.1</metadatamappingVersion>
+		<metadatasharingVersion>1.1.8</metadatasharingVersion>
+		<reportingVersion>0.8</reportingVersion>
+		<reportingrestVersion>1.2</reportingrestVersion>
+		<serializationxstreamVersion>0.2.7</serializationxstreamVersion>
+		<uiframeworkVersion>3.0</uiframeworkVersion>
+		<webservicesRestVersion>1.1</webservicesRestVersion>
+		<webservicesRestVersionRepo>1.1.29293</webservicesRestVersionRepo>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+
+		<!-- Begin OpenMRS modules -->
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>appframework-omod</artifactId>
+			<version>${appframeworkVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>calculation-omod</artifactId>
+			<version>${calculationVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>groovy-omod</artifactId>
+			<version>${groovyVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>htmlformentry-omod</artifactId>
+			<version>${htmlformentryVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>htmlformentry19ext-omod</artifactId>
+			<version>${htmlformentry19extVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>htmlwidgets-omod</artifactId>
+			<version>${htmlwidgetsVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>idgen-omod</artifactId>
+			<version>${idgenVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>kenyacore-omod</artifactId>
+			<version>${kenyacoreVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>kenyadq-omod</artifactId>
+			<version>${kenyadqVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>kenyaemr-omod</artifactId>
+			<version>${kenyaemrVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>kenyaui-omod</artifactId>
+			<version>${kenyauiVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>logic-omod</artifactId>
+			<version>${logicVersion}</version>
+			<type>omod</type> <!-- note the non-standard type  -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatamapping-omod</artifactId>
+			<version>${metadatamappingVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatasharing-omod</artifactId>
+			<version>${metadatasharingVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>reporting-omod</artifactId>
+			<version>${reportingVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>reportingrest-omod</artifactId>
+			<version>${reportingrestVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>serialization.xstream-omod</artifactId>
+			<version>${serializationxstreamVersion}</version>
+			<type>omod</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>uiframework-omod</artifactId>
+			<version>${uiframeworkVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>webservices.rest-omod</artifactId>
+			<version>${webservicesRestVersion}</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<target>1.6</target>
+						<source>1.6</source>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<!--
+			Copy all of the modules we depend on (this also gets extra jars we don't need).
+			We'll end up with things like "reporting-omod-0.7.2.1.jar".
+			-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+							<!-- the event module has the non-standard groupId org.openmrs -->
+							<includeGroupIds>org.openmrs.module,org.openmrs</includeGroupIds>
+							<excludeTransitive>true</excludeTransitive>
+						</configuration>
+					</execution>
+
+				</executions>
+			</plugin>
+
+			<!--
+			Rename things like "reporting-omod-0.7.2.1.jar" to "reporting-0.7.2.1.omod".
+			This also drops everything that doesn't match "*-omod-*.jar"
+			-->
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<id>rename-jars-to-omod</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<move todir="${project.build.directory}/distro">
+									<fileset dir="${project.build.directory}/dependencies" />
+									<mapper type="regexp" from="^(.+)-omod-(.+)\.jar" to="\1-\2.omod" />
+								</move>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<!-- For some reason the serialization.xstream-omod artifact is .omod, not .jar -->
+					<execution>
+						<id>rename-omods-to-omod</id>
+						<phase>package</phase>
+						<configuration>
+							<target>
+								<move todir="${project.build.directory}/distro">
+									<fileset dir="${project.build.directory}/dependencies" />
+									<mapper type="regexp" from="^(.+)-omod-(.+)\.omod" to="\1-\2.omod" />
+								</move>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!--
+			Assemble all of these omods into a zip file
+			-->
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<descriptors>
+						<descriptor>${basedir}/src/main/assembly/assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>openmrs-repo</id>
+			<name>OpenMRS Nexus Repository</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>openmrs-repo</id>
+			<name>OpenMRS Nexus Repository</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/public</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>openmrs-repo-modules</id>
+			<name>Modules</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules/</url>
+		</repository>
+		<snapshotRepository>
+			<id>openmrs-repo-snapshots</id>
+			<name>OpenMRS Snapshots</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>
