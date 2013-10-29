@@ -1,5 +1,6 @@
 KenyaEMR Distribution
 =====================================
+<a href="http://ci.kenyaemr.org/viewType.html?buildTypeId=bt5"><img src="http://ci.kenyaemr.org/app/rest/builds/buildType:bt5/statusIcon"/></a>
 
 Overview
 --------
