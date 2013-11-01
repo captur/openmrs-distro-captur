@@ -32,7 +32,7 @@
 		<kenyacoreVersion>0.15-SNAPSHOT</kenyacoreVersion>
 		<kenyaemrVersion>13.3-SNAPSHOT</kenyaemrVersion>
 		<kenyadqVersion>0.2.2</kenyadqVersion>
-		<kenyauiVersion>1.12.9</kenyauiVersion>
+		<kenyauiVersion>1.13-SNAPSHOT</kenyauiVersion>
 		<logicVersion>0.5.2</logicVersion>
 		<metadatamappingVersion>1.0.1</metadatamappingVersion>
 		<metadatasharingVersion>1.1.8</metadatasharingVersion>
