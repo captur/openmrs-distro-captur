@@ -31,7 +31,7 @@
 		<idgenVersion>2.6</idgenVersion>
 		<kenyacoreVersion>0.15-SNAPSHOT</kenyacoreVersion>
 		<kenyaemrVersion>13.3-SNAPSHOT</kenyaemrVersion>
-		<kenyadqVersion>0.2.2</kenyadqVersion>
+		<kenyadqVersion>0.2.3-SNAPSHOT</kenyadqVersion>
 		<kenyauiVersion>1.13-SNAPSHOT</kenyauiVersion>
 		<logicVersion>0.5.2</logicVersion>
 		<metadatamappingVersion>1.0.1</metadatamappingVersion>
