@@ -30,7 +30,7 @@
 		<htmlwidgetsVersion>1.6.5</htmlwidgetsVersion>
 		<idgenVersion>2.6</idgenVersion>
 		<kenyacoreVersion>0.16</kenyacoreVersion>
-		<kenyaemrVersion>13.3-RC1</kenyaemrVersion>
+		<kenyaemrVersion>${project.version}</kenyaemrVersion>
 		<kenyadqVersion>0.2.4</kenyadqVersion>
 		<kenyauiVersion>1.13</kenyauiVersion>
 		<logicVersion>0.5.2</logicVersion>
