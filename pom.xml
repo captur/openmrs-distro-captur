@@ -31,8 +31,8 @@
 		<idgenVersion>2.6</idgenVersion>
 		<kenyacoreVersion>0.16</kenyacoreVersion>
 		<kenyaemrVersion>${project.version}</kenyaemrVersion>
-		<kenyadqVersion>0.2.5</kenyadqVersion>
-		<kenyauiVersion>1.13</kenyauiVersion>
+		<kenyadqVersion>0.2.6</kenyadqVersion>
+		<kenyauiVersion>1.13.1</kenyauiVersion>
 		<logicVersion>0.5.2</logicVersion>
 		<metadatadeployVersion>0.1</metadatadeployVersion>
 		<metadatamappingVersion>1.0.1</metadatamappingVersion>
